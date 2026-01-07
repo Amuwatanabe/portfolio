@@ -6,6 +6,10 @@ html * {
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* 基本設定 */
 .container,
 footer {
@@ -257,4 +261,5 @@ footer {
 .other_contents figure {
 	margin: 20px 30px;
 	float: left;
+
 }

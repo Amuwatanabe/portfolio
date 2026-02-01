@@ -3,7 +3,7 @@ $(function () {
 
 	$(window).scroll(function () {
 		// スクロール量を表示する
-		$("#pos").text($(this).scrollTop());
+		//$("#pos").text($(this).scrollTop());
 
 		// スクロール量が700px超えたら
 		if ($(this).scrollTop() > 700) {
@@ -34,4 +34,5 @@ $(function () {
 		// console.log('縦の位置：' + target);
 		$('html,body').animate({ scrollTop: target }, 1000);
 	});
+
 });

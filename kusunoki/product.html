@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="kusunoki-favicon.ico">
+	<title>商品一覧｜くすのき</title>
+	<!-- <script src="https://kit.fontawesome.com/391f408a81.js" crossorigin="anonymous"></script> -->
+	<script src="https://kit.fontawesome.com/e40854b764.js" crossorigin="anonymous"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick-custom.css">
+	<link rel="stylesheet" href="css/sub-product.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<!-- ***************************************
+		ヘッダー領域
+	******************************** -->
+	<header class="header">
+		<!-- <div class="container header-container"> -->
+		<div class="header-bg">
+			<!-- <h1>   ※削除※
+					<a href="index.html">
+						<img src="#" alt="ロゴ" width="100" height="100">
+					</a>
+				</h1> -->
+			<div class="site-logo">
+				<div class="logo-font-image">
+					<div class="logo-image">
+						<a href="index.html">
+							<img src="images/kusunoki-logo.svg" alt="くすのき" width="100" height="100">
+						</a>
+					</div><!-- /.logo-image -->
+					<div class="font-image">
+						<img src="images/font-image-outline_01.svg" alt="くすのき木製工芸品・修理サービス" width="240" height="60">
+					</div><!-- /.font-image -->
+				</div><!--/logo-font-image-->
+			</div><!-- /.site-logo -->
+			<!-- ハンバーガーメニュー -->
+			<div class="toggle">
+				<i class="fa-solid fa-bars mob_menu"></i>
+			</div><!--/.toggle-->
+		</div><!--/.header-bg-->
+
+		<div class="nav-container">
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="about.html">About<br><span class="nav_sub">私たちについて</span></a>
+					</li>
+					<li>
+						<a href="product.html">Product<br><span class="nav_sub">商品一覧</span></a>
+					</li>
+					<li>
+						<a href="shop.html">Shop<br><span class="nav_sub">店舗情報</span></a>
+					</li>
+					<li>
+						<a href="guide.html">Guide<br><span class="nav_sub">ご利用ガイド</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div><!--/.nav-container-->
+		<!-- </div>/.header-container -->
+	</header>
+	<!-- ***************************************
+		ヒーローイメージ領域
+	******************************** -->
+	<div class="heroimage product-image">
+		<div class="hero-container product-title">
+			<h1>Product</h1>
+			<p>商品一覧</p>
+		</div><!-- /.product-title -->
+	</div>
+	<!-- ***************************************
+    	パンくずリスト
+	******************************** -->
+	<div class="breadcrumb">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li><i class="fa-solid fa-angle-right pan-icon"></i></li>
+				<li class="pan-title">商品一覧</li>
+			</ul>
+		</div>
+	</div>
+	<!-- ***************************************
+    	商品一覧セクション
+	******************************** -->
+	<main class="main product-list-section">
+		<!-- カテゴリ1: ぼくらの町・レールセット -->
+		<div class="container">
+			<section class="category-section">
+				<div class="category-header">
+					<h2>ぼくらの町・レールセット</h2>
+					<p>定番人気の鉄道おもちゃ。車も列車も手で押して動かせる。磁石で連結できる楽しさ。出産祝いやプレゼントに最適。</p>
+				</div>
+				<div class="product-grid">
+
+					<!-- 商品1 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/tt1.jpg" alt="連結・ワゴン(3色)">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">連結・ワゴン(3色)</h3>
+							<p class="product-description">お気に入りのビー玉をのせて走ってみよう！</p>
+							<div class="product-materials"><strong>使用木材：</strong>ブナ材、セン材</div>
+							<p class="product-price">1,000円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+					<!-- 商品2 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/tt2.jpg" alt="連結・先頭列車">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">連結・先頭列車</h3>
+							<p class="product-description">先頭を切って走る！ぐんぐんスピードをあげよう！</p>
+							<div class="product-materials"><strong>使用木材：</strong>ブナ材、セン材</div>
+							<p class="product-price">1,100円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+					<!-- 商品3 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/tt3.jpg" alt="連結・先頭列車">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">連結・先頭列車</h3>
+							<p class="product-description">先頭を切って走る！ぐんぐんスピードをあげよう！</p>
+							<div class="product-materials"><strong>使用木材：</strong>ブナ材、セン材</div>
+							<p class="product-price">1,100円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- カテゴリ2: 赤ちゃん用のおもちゃ -->
+			<section class="category-section">
+				<div class="category-header">
+					<h2>赤ちゃん用おもちゃ</h2>
+					<p>厳選された木材を使用し、赤ちゃんも安心して遊べる設計。材質や加工精度にもこだわっています。</p>
+				</div>
+				<div class="product-grid">
+
+					<!-- 商品1 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/bb1.jpg" alt="ガラガラ">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">ガラガラ</h3>
+							<p class="product-description">優しい手触りで、舐めても安心。カラカラと音をたてるよ！</p>
+							<div class="product-materials"><strong>使用木材：</strong>セン材</div>
+							<p class="product-price">1,100円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+					<!-- 商品2 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/bb2.jpg" alt="積み木">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">積み木</h3>
+							<p class="product-description">舐めても安心。カラフルな優しい木の積み木！</p>
+							<div class="product-materials"><strong>使用木材：</strong>ポプラ材</div>
+							<p class="product-price">2,200円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+					<!-- 商品3 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/bb3.jpg" alt="トントンボックス">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">トントンボックス</h3>
+							<p class="product-description">カラフルな大工さんごっこ!木の音を奏でよう！</p>
+							<div class="product-materials"><strong>使用木材：</strong>イタヤカエデ材</div>
+							<p class="product-price">3,300円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- カテゴリ3: 和のおもちゃ(ミニチュア) -->
+			<section class="category-section">
+				<div class="category-header">
+					<h2>和のおもちゃ・ミニチュア</h2>
+					<p>昔ながらのミニチュアサイズの日本のおもちゃ。オブジェとして飾っても、おもちゃとしても楽しめる完成度。</p>
+				</div>
+				<div class="product-grid">
+
+					<!-- 商品1 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/cc1.jpg" alt="だるま落とし">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">だるま落とし</h3>
+							<p class="product-description">緊張するかな？狙って叩いてみよう。うまくできるかな？</p>
+							<div class="product-materials"><strong>使用木材：</strong>イタヤカエデ材</div>
+							<p class="product-price">880円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+					<!-- 商品2 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/cc2.jpg" alt="けん玉">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">けん玉</h3>
+							<p class="product-description">大人気のけん玉！！集中してチャレンジしてみよう！</p>
+							<div class="product-materials"><strong>使用木材：</strong>イタヤカエデ材</div>
+							<p class="product-price">880円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+					<!-- 商品3 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/cc3.jpg" alt="コマ">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">コマ</h3>
+							<p class="product-description">ひもは上手く巻けるかな？綺麗に回せたらずっとまわるよ！</p>
+							<div class="product-materials"><strong>使用木材：</strong>ブナ材</div>
+							<p class="product-price">660円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- カテゴリ4: お茶セット(ミニチュア) -->
+			<section class="category-section">
+				<div class="category-header">
+					<h2>お茶セット・ミニチュア</h2>
+					<p>ミニチュアサイズの急須・茶筒・湯呑など。お茶の時間をリアルに再現できる精巧さが魅力です。</p>
+				</div>
+				<div class="product-grid">
+
+					<!-- 商品1 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/dd1.jpg" alt="お茶セット">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">お茶セット</h3>
+							<p class="product-description">職人が作った本格的なお茶セット。木の風合いと香りを一杯どうぞ。</p>
+							<div class="product-materials"><strong>使用木材：</strong>ヒノキ材、クスノキ材</div>
+							<p class="product-price">4,400円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- カテゴリ5: 飾り小物 -->
+			<section class="category-section">
+				<div class="category-header">
+					<h2>飾り小物</h2>
+					<p>ひとつひとつが手作りで同じものがない一点物の味わい。遊んだり飾ったり、自由に楽しめます。</p>
+				</div>
+				<div class="product-grid">
+
+					<!-- 商品1 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/ee1.jpg" alt="腰かけ猫">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">腰かけ猫</h3>
+							<p class="product-description">木彫り一体の腰かけた猫。くつろいだ風景を演出してくれます。</p>
+							<div class="product-materials"><strong>使用木材：</strong>ブナ材</div>
+							<p class="product-price">880円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+					<!-- 商品2 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/ee2.jpg" alt="Dancing Dog">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">Dancing Dog</h3>
+							<p class="product-description">わんちゃんの足元がガクガクするよ！緊張してるのかな？</p>
+							<div class="product-materials"><strong>使用木材：</strong>ブナ材、ヒノキ材</div>
+							<p class="product-price">2,200円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+					<!-- 商品3 -->
+					<div class="product-item">
+						<div class="product-image">
+							<img src="images/product/ee3.jpg" alt="キャンドルホルダー">
+							<div class="repair-badge">修理可</div>
+						</div>
+						<div class="product-info">
+							<h3 class="product-name">キャンドルホルダー</h3>
+							<p class="product-description">キャンドルを灯すと、熱でプロペラがクルクルまわるよ！</p>
+							<div class="product-materials"><strong>使用木材：</strong>ブナ材、ヒノキ材</div>
+							<p class="product-price">4,400円<span class="tax-note">(税込)</span></p>
+							<!-- Easy My Shop カート追加ボタン ここから -->
+							<form action="https://ksnk-toy.easy-myshop.jp/c-cart-prev?fic=4-animal01" method="POST"
+								accept-charset="UTF-8">
+								<input type="hidden" name="item_code" value="4-animal01" />
+								<input type="hidden" name="dummy" value="&amp;#65533;" />
+								数量:
+								<select name="item_count" class="select-number">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input type="hidden" name="last_url" value="">
+								<input type="submit" value="カートに入れる" class="cart-btn" />
+							</form>
+							<!-- Easy My Shop カート追加ボタン ここまで -->
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+	</main>
+	<!-- ***************************************
+		FOOTER領域
+	******************************** -->
+	<footer class="footer">
+		<div class="container footer-container">
+			<div class="footer-site">
+				<a href="index.html">
+					<div class="logo-font-image">
+						<div class="logo-image">
+							<a href="index.html">
+								<img src="images/kusunoki-logo.svg" alt="くすのき" width="100" height="100">
+							</a>
+						</div><!-- /.logo-image -->
+						<div class="font-image">
+							<img src="images/font-image-outline_01.svg" alt="くすのき木製工芸品・修理サービス" width="240" height="60">
+						</div><!-- /.font-image -->
+					</div><!-- /.logo-font -->
+				</a>
+			</div><!--/.footer-site-->
+			<ul class="footer-sns">
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-square-x-twitter"></i>
+						<span class="sr-only">X</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-facebook"></i>
+						<span class="sr-only">facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+						<span class="sr-only">instagram</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="footer-menu">
+				<li><a href="shop.html">店舗について</a></li>
+				<li><a href="term.html" target="_blank">ご利用にあたって</a></li>
+				<li><a href="notation.html" target="_blank">特定商取引法</a></li>
+				<li><a href="privacy.html" target="_blank">プライバシーポリシー</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+			</ul><!-- /.footer-menu -->
+
+			<div class="footer-copy">
+				&copy; 2026 kusunoki.
+			</div><!-- /.footer-copy -->
+		</div><!-- /.footer-container -->
+	</footer>
+	<!-- ***************************************
+			スクリプト領域
+		******************************** -->
+	<!-- jQuery本体 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- ハンバーガーメニュー用スクリプト -->
+	<script src="js/menu.js"></script>
+	<!-- slickを動作させるためのjQuery -->
+	<script src="js/slick.min.js"></script>
+	<!-- slickの実行を命令、オプション設定のjQuery -->
+	<script src="js/slick-custom.js"></script>
+</body>
+
+</html>

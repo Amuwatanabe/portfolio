@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="kusunoki-favicon.ico">
+	<title>くすのき</title>
+	<!-- <script src="https://kit.fontawesome.com/391f408a81.js" crossorigin="anonymous"></script> -->
+	<script src="https://kit.fontawesome.com/e40854b764.js" crossorigin="anonymous"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick-custom.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<!-- ***************************************
+		ヘッダー領域
+	******************************** -->
+	<header class="header">
+		<!-- <div class="container header-container"> -->
+		<div class="header-bg">
+			<div class="site-logo">
+				<div class="logo-font-image">
+					<div class="logo-image">
+						<a href="index.html">
+							<img src="images/kusunoki-logo.svg" alt="くすのき" width="100" height="100">
+						</a>
+					</div><!-- /.logo-image -->
+					<div class="font-image">
+						<img src="images/font-image-outline_01.svg" alt="くすのき木製工芸品・修理サービス" width="240" height="60">
+					</div><!-- /.font-image -->
+				</div><!--/logo-font-image-->
+			</div><!-- /.site-logo -->
+			<!-- ハンバーガーメニュー -->
+			<div class="toggle">
+				<i class="fa-solid fa-bars mob_menu"></i>
+			</div><!--/.toggle-->
+		</div><!--/.header-bg-->
+
+		<div class="nav-container">
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="about.html">About<br><span class="nav_sub">私たちについて</span></a>
+					</li>
+					<li>
+						<a href="product.html">Product<br><span class="nav_sub">商品一覧</span></a>
+					</li>
+					<li>
+						<a href="shop.html">Shop<br><span class="nav_sub">店舗情報</span></a>
+					</li>
+					<li>
+						<a href="guide.html">Guide<br><span class="nav_sub">ご利用ガイド</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div><!--/.nav-container-->
+		<!-- </div>/.header-container -->
+	</header>
+	<!-- ***************************************
+		ヒーローイメージ領域
+	******************************** -->
+	<div class="heroimage">
+		<div class="hero-container">
+			<h1>遊びは、こころだ。</h1>
+			<p>木製工芸品・修理の店&nbsp;&nbsp;くすのき</p>
+		</div><!-- /.hero-container -->
+	</div>
+	<main class="main">
+		<!-- ***************************************
+				ABOUT領域
+		******************************** -->
+		<section class="about">
+			<div class="container">
+				<h2>About</h2>
+				<p class="midashi">私たちについて</p>
+				<div class="about-container">
+					<p class="about-left">
+						代々受け継がれた<br>
+						職人の<strong>確かな技術</strong><br>
+						小さな工房で<br>
+						温かな<strong>おもちゃ</strong>を<br>作ります
+					</p>
+					<p class="about-right">
+						創業1970年<br>
+						<strong>伝承</strong>する職人技術<br>
+						制作から<strong>修理</strong>まで<br>
+						長いご愛用に<br><strong>寄り添い</strong>ます
+					</p>
+				</div><!--.about-container-->
+				<a href="about.html" class="btn">店舗紹介はこちら</a>
+			</div><!--.container-->
+			<!-- <a href="about.html" class="about-btn">店舗紹介はこちら</a> -->
+
+		</section>
+
+		<!-- ***************************************
+				PRODUCT領域
+		******************************** -->
+		<section class="product">
+			<div class="container">
+				<!-- <h2 class="product">Product</h2> -->
+				<h2>Product</h2>
+				<p class="midashi">商品一覧</p>
+			</div><!-- /.container -->
+			<div class="product-container">
+				<div class="slide-container">
+					<div class="slide-item"><!-- jQuery動作のキー -->
+
+						<!-- 商品カード1：ぼくらの町・レールセット -->
+						<div class="product-card">
+							<div class="product-card-image">
+								<img src="images/product/train.jpg" alt="ぼくらの町・レールセット" width="400" height="268">
+								<div class="repair-badge">修理可</div>
+							</div><!-- /.product-card-image -->
+							<div class="product-card-content">
+								<div class="product-card-category">定番人気</div>
+								<h3 class="product-card-title">ぼくらの町・レールセット</h3>
+								<p class="product-card-price">1,100円～</p>
+								<p class="product-description">
+									鉄道おもちゃと付属品。<br>
+									出産祝いやプレゼントに。
+								</p>
+							</div><!-- /.product-card-content -->
+						</div><!-- /.product-card -->
+
+						<!-- 商品カード2：赤ちゃん用のおもちゃ -->
+						<div class="product-card">
+							<div class="product-card-image">
+								<img src="images/product/baby.jpg" alt="赤ちゃん用のおもちゃ" width="400" height="268">
+								<div class="repair-badge">修理可</div>
+							</div><!-- /.product-card-image -->
+							<div class="product-card-content">
+								<div class="product-card-category">安全性重視</div>
+								<h3 class="product-card-title">赤ちゃん用おもちゃ</h3>
+								<p class="product-card-price">1,100円～</p>
+								<p class="product-description">
+									お子様が安心して遊べる、<br>
+									木製のおもちゃ。
+								</p>
+							</div><!-- /.product-card-content -->
+						</div><!-- /.product-card -->
+
+						<!-- 商品カード3：和のおもちゃ（ミニチュア） -->
+						<div class="product-card">
+							<div class="product-card-image">
+								<img src="images/product/wa-toys.jpg" alt="ミニチュアの和のおもちゃ" width="400" height="268">
+								<div class="repair-badge">修理可</div>
+							</div><!-- /.product-card-image -->
+							<div class="product-card-content">
+								<div class="product-card-category">ミニチュア</div>
+								<h3 class="product-card-title">和のおもちゃ</h3>
+								<p class="product-card-price">660円～</p>
+								<p class="product-description">
+									観賞用としても、<br>
+									玩具としても楽しめる。
+								</p>
+							</div><!-- /.product-card-content -->
+						</div><!-- /.product-card -->
+
+						<!-- 商品カード4：お茶セット（ミニチュア） -->
+						<div class="product-card">
+							<div class="product-card-image">
+								<img src="images/product/tea-set.jpg" alt="ミニチュアのお茶セット" width="400" height="268">
+								<div class="repair-badge">修理可</div>
+							</div><!-- /.product-card-image -->
+							<div class="product-card-content">
+								<div class="product-card-category">ミニチュア</div>
+								<h3 class="product-card-title">お茶セット</h3>
+								<p class="product-card-price">4,400円～</p>
+								<p class="product-description">
+									急須・茶筒・湯呑など、<br>
+									お茶の時間を精巧に再現。
+								</p>
+							</div><!-- /.product-card-content -->
+						</div><!-- /.product-card -->
+
+						<!-- 商品カード5：飾り小物 -->
+						<div class="product-card">
+							<div class="product-card-image">
+								<img src="images/product/duck.jpg" alt="飾り小物" width="400" height="268">
+								<div class="repair-badge">修理可</div>
+							</div><!-- /.product-card-image -->
+							<div class="product-card-content">
+								<div class="product-card-category">一点限り</div>
+								<h3 class="product-card-title">飾り小物</h3>
+								<p class="product-card-price">880円～</p>
+								<p class="product-description">
+									遊んだり飾ったり、<br>
+									味わいのある木製小物。
+								</p>
+							</div><!-- /.product-card-content -->
+						</div><!-- /.product-card -->
+
+					</div><!-- slide-item -->
+				</div><!-- /.slide-container -->
+				<a href="product.html" class="btn">商品一覧はこちら</a>
+			</div><!--/.product-container-->
+		</section>
+		<!-- ***************************************
+				GUIDE領域
+		******************************** -->
+		<section class="guide">
+			<div class="container guide-container">
+				<h2>Guide</h2>
+				<p class="midashi">ご利用の流れ</p>
+				<div class="guide-items">
+					<div class="guide-item">
+						<div class="guide-icon">
+							<i class="fa-solid fa-1"></i>
+						</div><!-- /.guide-icon -->
+						<h3>出会う</h3>
+						<small>運命の一点を選ぶ</small>
+					</div><!-- /.guide-item -->
+					<div class="guide-item">
+						<div class="guide-icon">
+							<i class="fa-solid fa-2"></i>
+						</div><!-- /.guide-icon -->
+						<h3>遊ぶ</h3>
+						<small>五感で愉しむ</small>
+					</div><!-- /.guide-item -->
+					<div class="guide-item">
+						<div class="guide-icon">
+							<i class="fa-solid fa-3"></i>
+						</div><!-- /.guide-icon -->
+						<h3>つなぐ</h3>
+						<small>一生の友に</small>
+					</div>
+				</div><!-- /.guide-items -->
+				<a href="guide.html" class="btn guide-btn">ご利用ガイドはこちら</a>
+			</div><!--/.guide-container-->
+		</section>
+	</main>
+	<!-- ***************************************
+				FOOTER領域
+	******************************** -->
+	<footer class="footer">
+		<div class="container footer-container">
+			<div class="footer-site">
+				<a href="index.html">
+					<div class="logo-font-image">
+						<div class="logo-image">
+							<a href="index.html">
+								<img src="images/kusunoki-logo.svg" alt="くすのき" width="100" height="100">
+							</a>
+						</div><!-- /.logo-image -->
+						<div class="font-image">
+							<img src="images/font-image-outline_01.svg" alt="くすのき木製工芸品・修理サービス" width="240" height="60">
+						</div><!-- /.font-image -->
+					</div><!-- /.logo-font -->
+				</a>
+			</div><!--/.footer-site-->
+			<ul class="footer-sns">
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-square-x-twitter"></i>
+						<span class="sr-only">X</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-facebook"></i>
+						<span class="sr-only">facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+						<span class="sr-only">instagram</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="footer-menu">
+				<li><a href="shop.html">店舗について</a></li>
+				<li><a href="term.html" target="_blank">ご利用にあたって</a></li>
+				<li><a href="notation.html" target="_blank">特定商取引法</a></li>
+				<li><a href="privacy.html" target="_blank">プライバシーポリシー</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+			</ul><!-- /.footer-menu -->
+
+			<div class="footer-copy">
+				&copy; 2026 kusunoki.
+			</div><!-- /.footer-copy -->
+		</div><!-- /.footer-container -->
+	</footer>
+	<!-- ***************************************
+			スクリプト領域
+		******************************** -->
+	<!-- jQuery本体 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- ハンバーガーメニュー用スクリプト -->
+	<script src="js/menu.js"></script>
+	<!-- slickを動作させるためのjQuery -->
+	<script src="js/slick.min.js"></script>
+	<!-- slickの実行を命令、オプション設定のjQuery -->
+	<script src="js/slick-custom.js"></script>
+</body>
+
+</html>

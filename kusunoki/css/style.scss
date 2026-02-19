@@ -1,0 +1,1034 @@
+@charset "utf-8";
+
+
+/****************************************
+                 インポートCSS
+**************************************/
+@import"_normalize.scss";
+@import"_slick.scss";
+@import"_slick-theme.scss";
+@import"_slick-custom.scss";
+@import"_sub-product.scss";
+@import"_sub.scss";
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	リセット
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	基本設定
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+
+}
+
+/*リンク設定*/
+a {
+	text-decoration: none;
+	line-height: 2rem;
+	// border-radius: 1000px;
+	padding: 0.7rem;
+}
+
+// ホバー時背景色を変更
+.nav a,
+.footer-menu a {
+	&:hover {
+		// レイアウトに影響が出ないように変化後に設定
+		background-color: #d2b48c;
+		// 基本は変化前にtransitionは持ってくる
+		transition: 0.8s;
+	}
+}
+
+//スマホ用
+html {
+	font-size: 4.5vw;
+	//ブラウザの幅の変動についていくように設定
+}
+
+//タブレット用設定
+@media (min-width: 768px) {
+	html {
+		font-size: 2.5vw;
+		//ブラウザの幅の変動についていくように設定
+	}
+}
+
+// タブレット（横）用
+@media (min-width: 900px) {
+	html {
+		font-size: 1.5vw;
+		//ブラウザの幅の変動についていくように設定
+	}
+}
+
+//PC用設定
+@media (min-width: 1100px) {
+	html {
+		font-size: 1.1vw;
+		//ブラウザの幅の変動についていくように設定
+	}
+}
+
+.header,
+.footer {
+	background-color: #f8e2c5;
+}
+
+body {
+	background-color: #fffdf5;
+	color: #4d4d4d;
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 3.7rem;
+}
+
+.midashi {
+	margin-bottom: 1rem;
+
+	&::before {
+		display: block;
+		content: "";
+		width: 150px;
+		height: 0px;
+		border-top: solid 2px #f79119;
+		margin: 0.2rem;
+	}
+}
+
+/*レイアウト*/
+img {
+	//親要素に対して100％の幅にすることで、画面の伸縮に対応
+	width: 100%;
+	// 念のためにheightを設定している
+	height: auto;
+}
+
+//スマホ用
+//画面幅が狭いので、伸縮するようにする
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+//PC用
+@media (min-width:1100px) {
+	.container {
+		width: 1100px;
+		// margin: 0 auto;
+	}
+}
+
+//最初と最後に余白を作る
+.main {
+	margin: 3% 0;
+}
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	ヘッダー領域
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+.header {
+	position: relative;
+	z-index: 110;
+
+	//スマホ用
+	.mob_menu {
+		float: right;
+		font-size: 1.5rem;
+		line-height: 6rem; //真ん中に来るようにヘッダー領域とおなじ6remにする
+		cursor: pointer; //カーソルが手の形になる
+		margin-right: 5%;
+
+	}
+
+	.header-bg {
+		// display: inline-block;
+		// margin-left: 5%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		//ハンバーガーメニューのために追加
+		position: relative;
+		background: #f8e2c5;
+		// height: 6rem;
+		z-index: 50;
+	}
+
+	@media(width:1100px) {
+		.header_bg {
+			z-index: 30;
+		}
+	}
+
+	.logo-font-image {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.logo-image img {
+		width: 3rem;
+		margin-top: 1.5rem;
+	}
+
+	.font-image {
+		width: 8rem;
+		padding-top: 2rem;
+	}
+
+	.nav-container {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 30;
+	}
+
+	@media(min-width:900px) {
+		.nav-container {
+			z-index: 60;
+		}
+	}
+}
+
+
+
+@media(min-width: 1100px) {
+	.header {
+		.logo-image img {
+			width: 7rem;
+			margin-top: 1rem;
+			margin-left: 2rem;
+		}
+
+		.font-image {
+			width: 13rem;
+			padding-top: 2rem;
+		}
+
+		.site-logo {
+			margin: 0 calc((100vw - 1100px) / 4)
+		}
+
+	}
+}
+
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+ナビゲーション領域
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+.toggle {
+	margin-right: 5%;
+	z-index: 100;
+}
+
+//スマホ用
+.nav {
+	display: block;
+	position: absolute;
+	top: -18rem;
+	background-color: #f8e2c5;
+	width: 100%;
+	transition: 800ms;
+
+	ul {
+		li {
+			text-align: center;
+			border-top: 0.1rem solid #f79119;
+
+			a {
+				color: #4d4d4d;
+				display: block;
+				font-size: 1rem;
+				line-height: 1.5rem;
+				border-radius: 0%;
+				font-family: "Montserrat", sans-serif;
+
+				.nav_sub {
+					font-size: 0.8rem;
+					font-family: "Noto Sans JP", sans-serif;
+				}
+			}
+		}
+	}
+}
+
+
+//PC用
+@media (min-width:900px) {
+	.toggle {
+		display: none;
+	}
+
+	.nav {
+		display: block;
+		//もともとを-6remにすることで固定する
+		top: -6rem;
+		right: 0;
+		background-color: #f8e2c5;
+		width: auto;
+		// z-index: 40;
+
+		ul {
+			overflow: hidden;
+
+			li {
+				// float: left;
+				// margin: 0 0.2rem;
+				display: inline-block;
+				border: none;
+
+				a {
+					display: block;
+					text-align: center;
+					border-radius: 1000px;
+					width: 100%;
+					font-size: 1.3rem;
+					color: #333;
+					font-family: "Montserrat", sans-serif;
+
+					.nav_sub {
+						font-size: 0.8rem;
+						font-family: "Noto Sans JP", sans-serif;
+
+						&::before {
+							display: block;
+							content: "";
+							width: 100px;
+							height: 0px;
+							border-top: solid 1px #f79119;
+							margin: 0.2rem auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// PC版1100pxの場合のNAV要素の調整
+@media (min-width:900px) {
+	.header .nav {
+		margin: 1rem 2rem 0 0;
+	}
+}
+
+@media (min-width:1100px) {
+	.header .nav {
+		margin: 0.3rem 2rem 0 0;
+	}
+}
+
+
+/***********************************
+navがスマホ用の場合はシャーンって動くようにする
+************************************/
+.open .nav {
+	top: 0rem;
+}
+
+@media (min-width:900px) {
+
+	//PCのときはnavが移動しないようにする
+	.open .nav {
+		top: -6rem;
+	}
+}
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	ヒーローイメージ領域
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+.heroimage {
+	background-image: url("../images/key.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -100% 100%;
+	background-attachment: scroll;
+
+	//スマホ用
+	height: 60vh;
+
+	//PC用
+	@media (min-width:1100px) {
+		height: 80vh;
+	}
+}
+
+.hero-container {
+	//文字を中央にするための設定
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	color: #fffdf5;
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+.heroimage h1 {
+	margin-bottom: 42px;
+	font-weight: 500;
+	font-size: clamp(48px, 5vw, 68px);
+	min-height: 0vw;
+	line-height: 1.3;
+	text-align: center;
+}
+
+.heroimage p {
+	font-size: 1.2rem;
+}
+
+/* ===========================
+    パンくずリスト
+=========================== */
+.breadcrumb {
+	padding: 1rem 0;
+	font-size: 0.9rem;
+
+	ul {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+
+		li {
+			justify-content: center;
+			align-items: center;
+		}
+
+		li:last-child::after {
+			content: "";
+		}
+	}
+
+	a {
+		color: #f79119;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.pan-icon {
+	font-size: 0.8rem;
+	color: #808080;
+	margin: 0 -0.6rem;
+}
+
+.pan-title {
+	font-size: 0.8rem;
+	color: #666;
+	margin-top: 0.2rem;
+}
+
+@media(min-width: 768px) {
+	.pan-title {
+		margin-top: 0.1rem;
+	}
+}
+
+@media(min-width: 900px) {
+	.breadcrumb {
+		ul {
+
+			li {
+				font-size: 1.1rem;
+			}
+		}
+	}
+
+	.pan-title {
+		margin-top: 0.09rem;
+	}
+}
+
+@media(min-width: 1100px) {
+	.breadcrumb {
+		ul {
+
+			li {
+				font-size: 1rem;
+			}
+		}
+	}
+
+	.pan-title {
+		margin-top: 0.09rem;
+	}
+}
+
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	アバウトセクション領域ここから
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+//アバウトセクションの設定(スマホ)
+.about {
+	margin-bottom: 1rem;
+
+	.about-container {
+		background-image: url("../images/about/about-top.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		// width: 90vw;
+		width: 100%;
+		text-align: center;
+		padding: 0.7rem 0;
+		margin: 0 auto;
+		border-radius: 10px;
+
+		// PC用
+		// height: 50vh;
+		// display: flex;
+		// 	align-items: center;
+		//PC用
+
+
+		.about-left,
+		.about-right {
+			font-size: 1rem;
+			line-height: 1.5;
+			text-align: center;
+			color: #ffffff;
+			background-color: rgba(234, 224, 212, 0.263);
+			margin: 0.6rem auto;
+			padding: 0.8rem;
+			width: 80vw;
+			border: solid thin;
+			border-radius: 20px;
+			// PC用
+			// font-size: 1.4rem;
+			// width: 20vw;
+		}
+
+		// //PC用
+		@media (min-width:1100px) {
+
+			.about-left,
+			.about-right {
+				font-size: 1.4rem;
+				width: 20vw;
+			}
+		}
+
+		strong {
+			font-size: 1.5rem;
+			// PC用
+			// font-size: 2.4rem;
+		}
+
+	}
+}
+
+@media (min-width:1100px) {
+	.about {
+		.about-container {
+			height: 50vh;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+
+
+
+.about .btn {
+	margin-top: 2rem;
+}
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	アバウトセクション領域ここまで
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	Product領域
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+.product {
+	padding: 2rem 0;
+}
+
+/* プロダクトコンテナー */
+.container.product-container {
+	width: 100%;
+}
+
+/* スライドコンテナー */
+.slide-container {
+	margin: 0 auto;
+	position: relative;
+	padding: 1.5rem 0 2rem;
+}
+
+/* カード枠 */
+.product-card {
+	margin: 0.5rem;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	width: 100%;
+}
+
+//PC
+@media(min-width: 1100px) {
+	.product-card {
+		margin: 1rem;
+		background: #fff;
+		border-radius: 12px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	}
+}
+
+/* 画像エリア */
+.product-card-image {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	background-color: #f5f5f5;
+}
+
+.product-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* 修理可能バッジ */
+.repair-badge {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background-color: #f79119;
+	color: #fff;
+	font-size: 0.5rem;
+	font-weight: 600;
+	padding: 0.2rem 0.5rem;
+	border-radius: 20px;
+	aspect-ratio: 1 / 1;
+	clip-path: circle(50%);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: center;
+}
+
+//タブレット
+@media(min-width: 768px) {
+	.repair-badge {
+		font-size: 0.6rem;
+		padding: 0.2rem 0.4rem;
+	}
+}
+
+//PC
+@media(min-width: 1100px) {
+	.repair-badge {
+		font-size: 0.9rem;
+		font-weight: 700;
+		padding: 0.3rem 0.7rem;
+	}
+}
+
+//タブレット(横)
+@media(min-width: 900px) {
+	.repair-badge {
+		font-size: 0.7rem;
+		font-weight: 700;
+		padding: 0.2rem 0.5rem;
+	}
+}
+
+.product-card-content {
+	padding: 1rem;
+	margin-top: auto;
+}
+
+.product-card-category {
+	margin-bottom: 0.5rem;
+	color: #f79119;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	font-size: clamp(14px, 1.3vw, 18px);
+}
+
+.product-card-title {
+	margin-bottom: 1rem;
+	white-space: nowrap;
+	font-size: clamp(18px, 2.4vw, 20px);
+	font-weight: 600;
+}
+
+.product-card-price {
+	font-size: clamp(20px, 3vw, 24px);
+	font-weight: 700;
+	margin-bottom: 0.8rem;
+}
+
+.product-description {
+	font-size: clamp(14px, 1.7vw, 18px);
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+//タブレット
+@media(min-width: 768px) {
+	.product-card-title {
+		margin-bottom: 1rem;
+		font-size: clamp(18px, 2vw, 24px);
+	}
+
+	.product-description {
+		font-size: clamp(14px, 1.5vw, 18px);
+		line-height: 1.6;
+		margin-bottom: 0;
+	}
+}
+
+//タブレット(横)
+@media(min-width: 900px) {
+	.product-card-category {
+		font-size: clamp(12px, 1.2vw, 16px);
+	}
+
+	.product-card-title {
+		margin-bottom: 1rem;
+		font-size: clamp(14px, 1.8vw, 18px);
+	}
+
+	.product-card-price {
+		font-size: clamp(18px, 2.8vw, 22px);
+	}
+
+	.product-description {
+		font-size: clamp(14px, 1.5vw, 18px);
+	}
+}
+
+//PC
+@media(min-width: 1100px) {
+	.product-description {
+		font-size: clamp(12px, 1.3vw, 16px);
+	}
+}
+
+/* ボタン */
+.btn {
+	display: block;
+	max-width: 250px;
+	padding: 0.6rem 0.8rem;
+	box-sizing: border-box;
+	border-radius: 12px;
+	background-color: #f79119;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+	transition: all 0.4s;
+	cursor: pointer;
+	font-weight: 600;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.32);
+	color: #fff;
+	text-decoration: none;
+
+
+	// display: block;
+	// width: fit-content;
+	// white-space: nowrap;
+	// min-width: 250px;
+}
+
+.btn:hover {
+	background-color: #e67e00;
+	transform: translateY(-2px);
+	transition: all 0.4s;
+}
+
+.btn a {
+	color: inherit;
+}
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	ガイド領域（トップページ用）
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+.guide {
+
+	//スマホ用：縦並び
+	.guide-items {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+		margin-top: 32px;
+		overflow: visible;
+	}
+
+	// PC用：横並び（768px以上）
+	@media (min-width: 768px) {
+		.guide-items {
+			flex-direction: row;
+			justify-content: center;
+			gap: 100px;
+			margin: 32px 20px 0;
+		}
+	}
+
+	.guide-item {
+		background-color: #fff;
+		border-radius: 10px;
+		// padding: 2rem;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s, box-shadow 0.3s;
+		width: 90%;
+		max-width: 240px;
+		height: 240px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		overflow: visible;
+
+		&hover {
+			transform: translateY(-5px);
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+		}
+
+		// 三角形の共通設定
+
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: 10;
+		}
+
+		//スマホ用：下向き三角（最後のアイテム以外）
+		&:not(:last-child)::after {
+			// content: "";
+			// position: absolute;
+			bottom: -32px;
+			left: 50%;
+			transform: translateX(-50%);
+			// width: 0;
+			// height: 0;
+			border-style: solid;
+			border-width: 18px 12px 0 12px;
+			border-color: #f79119 transparent transparent transparent;
+			// z-index: 10;
+		}
+
+		// PC用：右向き三角に変更（最後のアイテム以外）
+
+		@media (min-width: 768px) {
+			// width: 250px;
+
+			&:not(:last-child)::after {
+				top: 50%;
+				bottom: auto;
+				left: auto;
+				right: -60px;
+				transform: translateY(-50%);
+				border-width: 12px 0 12px 18px;
+				border-color: transparent transparent transparent #f79119;
+				// z-index: 10;
+			}
+		}
+
+
+		.guide-icon {
+			font-size: 56px;
+			font-weight: bold;
+			line-height: 1;
+			color: #f79119;
+			margin-bottom: 8px;
+		}
+
+		h3 {
+			font-size: 20px;
+			margin-bottom: 4px;
+			color: #4d4d4d;
+			white-space: nowrap;
+		}
+
+		small {
+			font-size: 13px;
+			color: #666;
+			font-weight: normal;
+			text-align: center;
+			line-height: 1.4;
+			word-break: break-all;
+		}
+
+	}
+
+	.guide-btn {
+		// display: block;
+		// width: fit-content;
+		// white-space: nowrap;
+		// min-width: 250px;
+		// margin: 0 auto 80px !important;
+		margin-top: 3%;
+	}
+
+}
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+	フッター領域
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+.footer {
+	padding: 30px 0;
+	font-size: 13px;
+
+	.logo-font-image {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+//Gridをエリア名でコントロールするために各ボックスに名前を設定
+
+.footer-site {
+	grid-area: site;
+
+	.logo-image img {
+		margin-left: -2rem;
+	}
+}
+
+.footer-sns {
+	grid-area: sns;
+}
+
+.footer-menu {
+	grid-area: menu;
+}
+
+.footer-copy {
+	grid-area: copy;
+}
+
+// スマホ版
+.footer-container {
+	display: grid;
+	// エリア名でレイアウトを指定（1列4行）
+	grid-template-areas:
+		"site"
+		"sns"
+		"menu"
+		"copy";
+	// エリア同士の隙間を空ける
+	gap: 50px;
+	// 左右中央に配置
+	justify-items: center;
+}
+
+@media (min-width: 768px) {
+
+	// タブレット以上のレイアウト 
+	.footer-container {
+		grid-template-areas:
+			"site sns"
+			"menu sns"
+			"copy sns";
+		gap: 20px;
+	}
+
+	// .footer-container直下のすべての要素で、.footer-sns以外の設定
+	//(.footer-site .footer-menu .footer-copy)
+	.footer-container>*:not(.footer-sns) {
+		//左揃え
+		justify-self: start;
+	}
+
+	// .footer-container直下の.footer-sns
+	.footer-container>.footer-sns {
+		//右揃え
+		justify-self: end;
+		//上下中央
+		align-self: center;
+	}
+}
+
+.footer-site {
+	.logo-image img {
+		margin-left: -2rem;
+		width: 10rem;
+	}
+}
+
+//フッターSNSの設定
+.footer-sns {
+	display: flex;
+	gap: 24px;
+	font-size: 24px;
+
+	a {
+		display: grid;
+		place-items: center;
+		width: 36px;
+		// 縦横比を1：1にする
+		aspect-ratio: 1 / 1;
+		background-color: #f8e2c5;
+		color: #4d4d4d;
+		//丸でくりぬく
+		clip-path: circle(50%);
+
+	}
+
+	/*aspect-ratio 非対応環境の設定*/
+	@supports not (aspect-ratio:1 / 1) {
+		a {
+			height: 36px;
+		}
+	}
+}
+
+//フッターメニューの設定
+.footer-menu {
+	display: flex;
+	//入りきらない場合、折り返して下の行に続ける
+	flex-wrap: wrap;
+	justify-content: center;
+	//アイテム通しの隙間
+	gap: 20px;
+
+	a {
+		color: #4d4d4d;
+		border-radius: 1000px;
+	}
+}
+
+//コピーライトの設定
+.footer-copy {
+	color: #4d4d4d;
+	margin-top: 1rem;
+}

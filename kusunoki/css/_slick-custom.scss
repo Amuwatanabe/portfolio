@@ -1,0 +1,70 @@
+.slide-items {
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+
+.slide-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0.4rem;
+}
+
+/* 矢印アイコン */
+//共通
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(247, 145, 25, 0.9);
+  border-radius: 50%;
+}
+
+.slick-arrow:hover {
+  background-color: rgba(247, 145, 25, 1);
+}
+
+//左矢印
+.slick-prev {
+  left: -20px; 
+  z-index: 10;
+}
+
+.slick-prev::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f104";
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+//右矢印
+.slick-next {
+  right: -20px; 
+  z-index: 10;
+}
+
+.slick-next::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ドットのカスタマイズ */
+.slick-dots li button:before {
+  font-size: 3rem;
+  top: 1rem;
+  color: #666;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #f79119;
+}

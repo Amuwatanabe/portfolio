@@ -1,0 +1,83 @@
+      .cls-1 {
+        fill: #5b5b5b;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-11, .cls-8, .cls-10 {
+        stroke: #707070;
+      }
+
+      .cls-2, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-8 {
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-4, .cls-12, .cls-13, .cls-11, .cls-14 {
+        stroke-linejoin: round;
+      }
+
+      .cls-3, .cls-4, .cls-12, .cls-13, .cls-11, .cls-14, .cls-8 {
+        stroke-linecap: round;
+      }
+
+      .cls-3, .cls-4, .cls-12, .cls-13, .cls-11, .cls-14, .cls-10 {
+        stroke-width: 7px;
+      }
+
+      .cls-4, .cls-12, .cls-13, .cls-14 {
+        stroke: #cecece;
+      }
+
+      .cls-12 {
+        fill: #fffffa;
+      }
+
+      .cls-15 {
+        fill: #f8feff;
+      }
+
+      .cls-5 {
+        stroke: #ffdede;
+      }
+
+      .cls-5, .cls-7 {
+        stroke-width: 30px;
+      }
+
+      .cls-13 {
+        fill: #f3fcff;
+      }
+
+      .cls-6 {
+        stroke: #fff9e1;
+      }
+
+      .cls-6, .cls-9 {
+        stroke-width: 40px;
+      }
+
+      .cls-11 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        stroke: #f2e9ff;
+      }
+
+      .cls-14 {
+        fill: #fff9e1;
+      }
+
+      .cls-9 {
+        stroke: #e7ffe1;
+      }
+
+      .cls-16 {
+        fill: #ffcfcf;
+      }
